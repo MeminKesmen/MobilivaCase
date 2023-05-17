@@ -1,0 +1,38 @@
+using MobilivaCase.API.Middlewares;
+using MobilivaCase.Application;
+using MobilivaCase.Infrastructure;
+using MobilivaCase.Persistence;
+using Serilog;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddPersistenceServices();
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices();
+
+var log = new LoggerConfiguration().WriteTo.File("Logs/log.txt").CreateLogger();
+builder.Host.UseSerilog(log);
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseMiddleware<ErrorLogMiddleware>();
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

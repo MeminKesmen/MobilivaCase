@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8B60961D-D841-4D6E-9C4F-491E87AD2FD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilivaCase.Application", "Core\MobilivaCase.Application\MobilivaCase.Application.csproj", "{B3E1739F-A8D6-42B7-A9BA-E74AA6E02DC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilivaCase.Domain", "Core\MobilivaCase.Domain\MobilivaCase.Domain.csproj", "{4B3E2E89-FB6A-4457-B92B-BFB01BC56E61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilivaCase.EnvironmentConfiguration", "Core\MobilivaCase.EnvironmentConfiguration\MobilivaCase.EnvironmentConfiguration.csproj", "{6F2B53BE-3C0F-444D-BD6C-E74F8DA8DA0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{70DCCD08-0EE4-4BB7-9776-D25ABB9353D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilivaCase.Persistence", "Infrastructure\MobilivaCase.Persistence\MobilivaCase.Persistence.csproj", "{1E47EE40-6B6B-4DDE-B2CD-A69155C0FE4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilivaCase.Infrastructure", "Infrastructure\MobilivaCase.Infrastructure\MobilivaCase.Infrastructure.csproj", "{CAF9B5FE-EE1A-4741-8C16-812777478282}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B0282896-3C3C-4894-9493-F3232164EEF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqBackgroundService", "Services\RabbitMqBackgroundService\RabbitMqBackgroundService.csproj", "{FF68DC7B-749C-4B7C-81E3-31BFB966D4B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7D69FD0F-0500-43CE-B092-6A8C085CC626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilivaCase.API", "Presentation\MobilivaCase.API\MobilivaCase.API.csproj", "{F32C763C-736E-40F9-A922-657707E0D483}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3E1739F-A8D6-42B7-A9BA-E74AA6E02DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E1739F-A8D6-42B7-A9BA-E74AA6E02DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E1739F-A8D6-42B7-A9BA-E74AA6E02DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E1739F-A8D6-42B7-A9BA-E74AA6E02DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B3E2E89-FB6A-4457-B92B-BFB01BC56E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3E2E89-FB6A-4457-B92B-BFB01BC56E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3E2E89-FB6A-4457-B92B-BFB01BC56E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3E2E89-FB6A-4457-B92B-BFB01BC56E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2B53BE-3C0F-444D-BD6C-E74F8DA8DA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2B53BE-3C0F-444D-BD6C-E74F8DA8DA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2B53BE-3C0F-444D-BD6C-E74F8DA8DA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2B53BE-3C0F-444D-BD6C-E74F8DA8DA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E47EE40-6B6B-4DDE-B2CD-A69155C0FE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E47EE40-6B6B-4DDE-B2CD-A69155C0FE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E47EE40-6B6B-4DDE-B2CD-A69155C0FE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E47EE40-6B6B-4DDE-B2CD-A69155C0FE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF9B5FE-EE1A-4741-8C16-812777478282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF9B5FE-EE1A-4741-8C16-812777478282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF9B5FE-EE1A-4741-8C16-812777478282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF9B5FE-EE1A-4741-8C16-812777478282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF68DC7B-749C-4B7C-81E3-31BFB966D4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF68DC7B-749C-4B7C-81E3-31BFB966D4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF68DC7B-749C-4B7C-81E3-31BFB966D4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF68DC7B-749C-4B7C-81E3-31BFB966D4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32C763C-736E-40F9-A922-657707E0D483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32C763C-736E-40F9-A922-657707E0D483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32C763C-736E-40F9-A922-657707E0D483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32C763C-736E-40F9-A922-657707E0D483}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3E1739F-A8D6-42B7-A9BA-E74AA6E02DC1} = {8B60961D-D841-4D6E-9C4F-491E87AD2FD0}
+		{4B3E2E89-FB6A-4457-B92B-BFB01BC56E61} = {8B60961D-D841-4D6E-9C4F-491E87AD2FD0}
+		{6F2B53BE-3C0F-444D-BD6C-E74F8DA8DA0E} = {8B60961D-D841-4D6E-9C4F-491E87AD2FD0}
+		{1E47EE40-6B6B-4DDE-B2CD-A69155C0FE4D} = {70DCCD08-0EE4-4BB7-9776-D25ABB9353D9}
+		{CAF9B5FE-EE1A-4741-8C16-812777478282} = {70DCCD08-0EE4-4BB7-9776-D25ABB9353D9}
+		{FF68DC7B-749C-4B7C-81E3-31BFB966D4B9} = {B0282896-3C3C-4894-9493-F3232164EEF0}
+		{F32C763C-736E-40F9-A922-657707E0D483} = {7D69FD0F-0500-43CE-B092-6A8C085CC626}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EEA9F78-E596-4C2B-BB61-C64D2420A7FA}
+	EndGlobalSection
+EndGlobal
